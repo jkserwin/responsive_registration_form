@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <title>Reponsive Registration Form</title>
+</head>
+<body>
+
+    <div class="logo">
+        <h1>THE CODE REVIEW</h1>
+    </div>
+    
+    <div class="wrapper">
+
+        <header>
+            <h2>Signup for our newsletter</h2>
+            <p>Get the latest news on how your code is doing right in your inbox</p>
+        </header>
+
+        <form action="#">
+            <div class="formchunk1">
+                <fieldset>
+                    <legend>Contact Information</legend>
+
+                    <div class="formflex1">
+                        <label for="name">Full Name</label>
+                        <input required type="text" id="name" name="user-name" placeholder="Required"><br>
+                        <label for="email">Email Address</label>
+                        <input required type="email" id="email" name="user-email" placeholder="Required"><br>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="user-phone" placeholder=""><br>
+                        <label for="address">Street Address</label>
+                        <input type="text" id="address" name="user-address" placeholder=""><br>
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="user-city" placeholder=""><br>
+                        <label for="state">State</label>
+                        <select name="user-state" id="state">
+                            <option value="" disabled selected hidden>Choose State</option>
+                            <option value="al">Alabama</option>
+                            <option value="ak">Alaska</option>
+                            <option value="az">Arizona</option>
+                            <option value="ar">Arkansas</option>
+                        </select><br>
+                        <label for="zip">Zip Code</label>
+                        <input type="text" id="zip" name="user-zip" placeholder="">
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="formchunk2">
+                <fieldset>
+                    <legend>Newsletter</legend>
+                
+                    <label>Select the newsletters you would like to receive</label><br>
+                
+                    <div class="options">
+                        <input type="checkbox" id="html-news" name="newsletter-type" value="html-news"><label for="html-news">HTML News</label><br>
+                        <input type="checkbox" id="css-news" name="newsletter-type" value="css-news"><label for="css-news">CSS News</label><br>
+                        <input type="checkbox" id="js-news" name="newsletter-type" value="js-news"><label for="js-news">Javascript News</label><br>
+                    </div>
+                    
+                    <label>Newsletter format</label><br>
+                    
+                    <div class="options">
+                        <input type="radio" id="html-format" name="newsletter-format" value="html-format"><label for="html-format">HTML</label><br>
+                        <input type="radio" id="plain-format" name="newsletter-format" value="plain-format"><label for="plain-format">Plain text</label><br>
+                    </div>
+                    
+                    <label for="other-topics">Other topics you'd like to hear about</label><br>
+                    <textarea name="user-other-topics" id="other-topics" placeholder="Example: I'd like to hear about new types of dirt and sand!"></textarea><br>
+
+                    <button type="submit">Sign Up</button>
+                </fieldset>
+            </div>
+        </form>
+
+        <footer>
+            <p>Copyright The Code Review</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
